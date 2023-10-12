@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./expense.css">
+</head>
+<body>
+  <div class="expense-tracker">
+    <h1>Expense Tracker</h1>
+    <div class="expense-form">
+      <input type="text" id="description" placeholder="Expense Description">
+      <input type="number" id="amount" placeholder="Amount">
+      <button id="addExpense">Add Expense</button>
+    </div>
+    <div class="expenses-list" >
+      <h2>Expenses:</h2>
+      <ul></ul>
+    </div>
+    <h3>Total Expenses: <span id="totalExpenses">0</span></h3>
+  </div>
+  <script src="./expense.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheshank-web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height:80px ;
+            background-color:rgb(18, 18, 62) ;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px ;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color:rgb(153, 153, 226);
+            font-size: 1.4rem;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+        .firstsection>div{
+            width: 30%
+        }
+        .leftsection{
+            font-size: 3rem;
+            
+
+        }
+        .rightsection img{
+            width: 80%;
+            
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        #element{
+            color: rgb(226, 140, 26);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 10px 0px;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .text-gray{
+            color: gray;
+        }
+        .secondsection .box{
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+        .image-top{
+            width: 100px;
+            height: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-text{
+        position: relative;
+        top: 75px;
+        width: 150px;
+        }
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .skill-label {
+            font-weight: bold;
+        }
+
+        .skill-range {
+            width: 300px;
+            height: 20px;
+            background-color: lightgray;
+        }
+        .skill-level {
+            height: 100%;
+            background-color: rgb(214, 87, 14);
+        }
+        .thirdsection h1{
+            font-size: 3rem;
+            margin-bottom:10px ;
+        }
+        .footer {
+            background-color:rgb(56, 62, 33);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #000;
+        }
+        .projects-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .project {
+            margin-bottom: 30px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .project-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .contact-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .contact-form {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #222f3d;
+        }
+        @media (max-width: 768px) {
+    .firstsection{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstsection > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .rightsection img {
+        width: 60%;
+        margin-top: 20px;
+    }
+
+    .secondsection.box {
+        width: 100%;
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    .secondsection .vertical {
+        margin: 0;
+    }
+
+    .image-top {
+        display: none;
+    }
+
+    .vertical-text {
+        top: 0;
+        left: 50%;
+        padding: 10px;
+        /* transform: translateX(-50%); */
+        /* width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px; */ 
+    }
+
+    .s h1 {
+        font-size: 1.5rem;
+    }
+
+    .thirdsection h1 {
+        font-size: 2rem;
+    }
+
+    .projects-section {
+        padding: 30px 0;
+    }
+
+    .projects-section .project {
+        margin-bottom: 20px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sheshank Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="firstsection" id="home">
+        <div class="leftsection">
+       Hi, my name is <span class="purple">Sheshank</span>
+        <div>and I am a  passionate</div>
+        <span id="element"></span></div>
+        <div class="rightsection"></div>
+        <!-- <iframe src="./Resume.html" width="100%" height="600px"></iframe> -->
+        <img src="./web developer.png" alt="">
+    </section>
+    <hr>
+    <section class="secondsection" id="about">
+        <span class="text-gray">What I have studied so far</span>
+        <h1>Education</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="./school.jpeg" alt="">
+                <div class="vertical-text">
+                  RMC High School [2005-2016],Kamlapur-->grade:9.2    
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="./college.jpeg" alt="">
+                <div class="vertical-text">
+                  Narayana Junior College[2016-2018],Hyderabad-->Marks:974   
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="./graduation.jpeg" alt="">
+                <div class="vertical-text">
+                  AV college of Arts Science and Commerce[2018-2021],Hyderabad-->grade:9.2    
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="thirdsection">
+        <h1>My skills</h1>
+        <div class="skill">
+            <span class="skill-label">HTML</span>
+            <div class="skill-range">
+                <div class="skill-level" style="width: 100%;"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <span class="skill-label">CSS</span>
+            <div class="skill-range">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <span class="skill-label">JavaScript</span>
+            <div class="skill-range">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="projects-section" id="projects">
+        <div class="project">
+            <h2 class="project-title">Project Currency Converter</h2>
+            <p class="project-description">This is Project regarding Currency Converter which I bulit using Html,Css and Javascript</p>
+            <a class="project-link" href="./currencyExchange.html">View Project</a>
+        </div>
+        <!-- <div class="project">
+            <h2 class="project-title">Project Analog Clock</h2>
+            <p class="project-description">This is Project regarding Analog Clock which I bulit using Html,Css and Javascript</p>
+            <a class="project-link" href="./anlogclock.html">View Project</a>
+        </div> -->
+        <div class="project">
+            <h2 class="project-title">Expense Tracker</h2>
+            <p class="project-description">This is Project regarding Expense Tracker I bulid using Html,Css and Javascript</p>
+            <a class="project-link" href="./expense.html">View Project</a>
+        </div>
+        <div class="project">
+            <h2 class="project-title">Quiz-App</h2>
+            <p class="project-description">This is Project regarding Quiz-App I bulid using Html,Css and Javascript</p>
+            <a class="project-link" href="./quiz.html">View Project</a>
+        </div>
+        <div class="project">
+            <h2 class="project-title">Amazon clone</h2>
+            <p class="project-description">This is Project regarding Amazon Webpage clone I bulid using Html,Css</p>
+            <a class="project-link" href="./Amazonclone.html">View Project</a>
+        </div>
+        <div class="project">
+            <h2 class="project-title">Calculator</h2>
+            <p class="project-description">This is Project regarding a Simple Calculator I bulid using Html,Css and Javascript</p>
+            <a class="project-link" href="./calculator.html">View Project</a>
+        </div>
+        <!-- <div class="project">
+            <h2 class="project-title">Tic Tac Toe Game</h2>
+            <p class="project-description">This is Project regarding Tic Tac Toe Game I bulid using Html,Css and Javascript</p>
+            <a class="project-link" href="./tictactoe.html">View Project</a>
+        </div> -->
+        <hr>
+        <section class="contact-section" id="contact">
+            <div class="contact-info">
+                <p class="contact-label">Email:</p>
+                <p class="contact-value">danthanapallysheshank123@gmail.com</p>
+            </div>
+    
+            <div class="contact-info">
+                <p class="contact-label">Phone:</p>
+                <p class="contact-value">9676228079</p>
+            </div>
+    
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Get in Touch with Me"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </section>
+</main>
+<footer class="footer">
+    <a href="https://www.linkedin.com/in/danthanapally-sheshank-86473a192/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BfkoEusQ%2FR9iE%2Bu3rahNbew%3D%3D" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <span> | </span>
+    <a href="https://github.com/Sheshank2805" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <p>&copy; 2023 Sheshank. All rights reserved.</p>
+</footer>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer','Web Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>

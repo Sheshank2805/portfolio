@@ -1,0 +1,46 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&family=Roboto:ital,wght@1,300&display=swap');
+*{
+    background-color: black;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family:'Roboto',sans-serif ;
+}
+  .button{
+    width: 66px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+  } 
+  .row{
+    margin:8px 0 ;
+  }
+  .row input{
+    width: 291px;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: azure;
+  }   
+  .btnorange{
+    background-color: orange;
+    color: white;
+  }
+  .btnenlarge{
+    width: 140px;
+    border-radius: 9px;
+  }
+  .btncol{
+    background-color: rgb(6, 60, 108);
+    color: white;
+  }
+  .btngrey{
+    background-color: gray;
+    color: white;
+  }

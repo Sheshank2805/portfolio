@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            
+        }
+        i{
+            color: rgb(5, 5, 83);
+        }
+
+        .left-section {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-right: 20px;
+            box-shadow: 0 0 5px 2px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px 1px ;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .role {
+            font-size: 18px;
+            color: #888;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 5px;
+        }
+
+        .skills {
+            margin-bottom: 20px;
+        }
+
+        .skills h3,
+        .languages h3 {
+            margin-bottom: 5px;
+        }
+
+        .skills li {
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+
+        .skills .range-bar {
+            background-color: #ddd;
+            height: 20px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .skills .range-fill {
+            background-color:rgb(32, 115, 128);
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        .languages li {
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+
+        .languages .range-bar {
+            background-color: #ddd;
+            height: 20px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .languages .range-fill {
+            background-color: rgb(32, 115, 128);
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        .projects {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            height: 40%;
+            box-shadow: 0 0 5px 1px;
+            overflow: scroll;
+        }
+
+        .project-item {
+            margin-bottom: 10px;
+        }
+
+        .project-item i {
+            margin-right: 5px;
+        }
+
+        .education {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            height: 57.5%;
+            box-shadow: 0 0 5px 1px;
+            overflow:scroll ;
+        }
+
+        .education-item {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            display: flex;
+            color: #079968;
+            align-items: center;
+            justify-content: center;
+            background-color:rgb(1, 70, 93);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .footer a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img class="profile-picture" src="./sheshank.png" alt="Profile Picture">
+            <div class="name">Sheshank Danthanapally</div>
+            <div class="role">Front-end Developer</div>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> danthanapallysheshank123@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +91 9676228079</p>
+                <p><i class="fas fa-map-marker-alt"></i> Warangal,Telangana</p>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>
+                        HTML5
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 95%;text-align: center;color: #fff;">95%</div>
+                        </div>
+                    </li>
+                    <li>
+                        CSS3
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 90%;text-align: center;color: #fff;">90%</div>
+                        </div>
+                    </li>
+                    <li>
+                        JavaScript
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 85%;text-align: center;color: #fff;">85%</div>
+                        </div>
+                    </li>
+                    <li>
+                        React Js
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 80%;text-align: center;color: #fff;">80%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h3>Languages Known</h3>
+                <ul>
+                    <li>
+                        English
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 90%;text-align: center;color: #fff;">90%</div>
+                        </div>
+                    </li><br>
+                    <li>
+                        Telugu
+                        <div class="range-bar">
+                            <div class="range-fill" style="width: 90%;text-align: center;color: #fff;">90%</div>
+                        </div>
+                    </li><br>
+                    <li>
+                        Hindi
+                        <div class="range-bar">
+                            <div class="range-fill" style="width:75%;text-align: center;color: #fff">75%</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3><i class="fas fa-caret-right"></i> Project1-Currency Converter</h3>
+                    <p>Bulid using HTML,CSS and Javascript</p>
+                </div>
+                <div class="project-item">
+                    <h3><i class="fas fa-caret-right"></i> Project2-Analog clock</h3>
+                    <p>Bulid using HTML,CSS and Javascript</p>
+                </div>
+                <div class="project-item">
+                    <h3><i class="fas fa-caret-right"></i> Project3-portfolio Website</h3>
+                    <p>Bulid using HTML,CSS</p>   
+                </div>
+                <div class="project-item">
+                    <h3><i class="fas fa-caret-right"></i> Project4-Amazon Clone</h3>
+                    <p>Bulid using HTML,CSS</p>   
+                </div>
+                <div class="project-item">
+                    <h3><i class="fas fa-caret-right"></i> Project5-Calculator</h3>
+                    <p>Bulid using HTML,CSS and Javascript</p>   
+                </div>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <span><h3><i class="fas fa-graduation-cap"></i> Graduation-Av college of Arts Science and Commerce(BSC-MSCS)</h3></span>
+                        <span><h5><i class="fa fa-calendar "></i> 2018 - 2021</h5></span>
+                </div>
+                <div class="education-item">
+                    <span><h3><i class="fas fa-graduation-cap"></i> Intermediate-Narayana junior college(MPC)</h3></span>
+                    <span><h5><i class="fa fa-calendar "></i>  2016 - 2018</h5></span>
+                </div>
+                <div class="education-item">
+                    <span><h3><i class="fas fa-graduation-cap"></i> SSC-RMC High School</h3></span>
+                    <span><h5><i class="fa fa-calendar "></i>  2005 - 2016</h5></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/danthanapally-sheshank-86473a192/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Sheshank2805"><i class="fab fa-github"></i></a>
+        <p>&copy; 2023 Sheshank | Resume</p>
+    </div>
+</body>
+</html>
